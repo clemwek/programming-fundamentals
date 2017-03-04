@@ -1,10 +1,10 @@
 function product(a, b) {
     // implement your solution here
     try {
-        if (typeof a == "string" || typeof b == "string") {
-            throw "NaN";
+        if (typeof a === "number" && typeof b == "number") {
+            return a * b;
         } else {
-            a * b;
+            throw new Error ("NaN");
         }
     } catch (error) {
         return error;
