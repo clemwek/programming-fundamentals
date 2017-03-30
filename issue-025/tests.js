@@ -52,13 +52,13 @@ describe("Functions:", function() {
 
     it("highestRated(): return highest rated learner", function() {
         var highest = highestRated(learners, 'JavaScript');
-        expect(highestRated.username).toEqual('clem0');
-        expect(highestRated.rating).toEqual(8);
+        expect(highest.username).toEqual('clem0');
+        expect(highest.rating).toEqual(8);
     });
 
     it("search(): should return a list of objects", function() {
         var phpLearners = search(learners, 'PHP');
-        expect(phpLearners[3].username).toEqual('stellak');
+        expect(phpLearners[2].username).toEqual('stellak');
         expect(phpLearners[3].username).toEqual('felix');
     });
 });
