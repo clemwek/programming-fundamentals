@@ -5,7 +5,7 @@
  */
 describe("Try Catch:", function() {
     it("throws an exception for non-numbers", function() {
-        expect(product).toThrowError(Error, 'NaN Expection');
+        expect(product).toThrowError(Error, 'NaN Exception');
     });
 
     it("returns multiple of numbers", function() {

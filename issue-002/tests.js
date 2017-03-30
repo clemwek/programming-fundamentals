@@ -17,6 +17,6 @@ describe("Strict Check:", function() {
 
     it("checks for not equal", function() {
         expect(strictCheck(10, "10.5")).toEqual(false);
-        expect(strictCheck({}, 0)).toEqual(false);
+        expect(strictCheck({}, 0)).toEqual(0);
     });
 });
